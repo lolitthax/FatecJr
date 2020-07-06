@@ -1,0 +1,268 @@
+/* MEDIA */
+
+
+/* RESPONSIVIDADE */
+
+
+/* menu */
+
+@media screen and (min-width:900px) {
+    .menu,
+    .btnMenu {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+    header {
+        background-color: #d63031;
+        padding: 10px, 40px;
+        height: 120px;
+    }
+    nav {
+        height: 100px;
+        padding-top: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav ul li {
+        padding: 10px 0;
+        cursor: pointer;
+    }
+    nav ul li.items {
+        position: relative;
+        width: auto;
+        margin: 0 16px;
+        text-align: center;
+        order: 3;
+    }
+    nav ul li.logo {
+        flex: 1;
+        font-weight: 600;
+        cursor: default;
+        user-select: none;
+    }
+    nav ul li a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        transition: .4s;
+        text-transform: uppercase;
+    }
+    nav ul li i {
+        font-size: 23px;
+    }
+    nav ul li.btn {
+        display: none;
+    }
+    nav a:hover {
+        text-decoration: underline;
+        transition: 5ms;
+    }
+    login a {
+        color: white;
+        text-decoration: none;
+        border: white 2px solid;
+        border-radius: 20px;
+        padding: 5px 20px;
+        cursor: pointer;
+        position: relative;
+    }
+    .login a:hover {
+        color: #d63031;
+        background-color: white;
+        transition: 0.8s linear;
+    }
+    .login a {
+        color: white;
+        text-decoration: none;
+        border: white 2px solid;
+        border-radius: 20px;
+        padding: 5px 20px;
+        cursor: pointer;
+        position: relative;
+    }
+    .logo {
+        width: 180px
+    }
+}
+
+@media screen and (min-width:1366px) {
+    .service {
+        width: calc(100% / 3);
+    }
+    .imgsobre img {
+        width: 500px;
+        height: 250px;
+    }
+    .banner img {
+        margin-top: -250px;
+        background-position: absolute;
+        z-index: -1;
+    }
+    .btn-banner1,
+    .btn-banner2 {
+        position: relative;
+        z-index: 1;
+    }
+    .btn-banner1:hover {
+        color: #fff;
+        background: #d63031;
+    }
+    .btn-banner2:hover {
+        color: #d63031;
+        background: #fff;
+    }
+    .wrapper-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 4em;
+        grid-column-gap: 4em;
+        padding: 1em 4em;
+    }
+    .content-timeline {
+        width: 900px;
+    }
+    input:hover {
+        color: #8e44ad;
+        transition: 1000ms;
+    }
+    form>button:hover {
+        color: #d63031;
+        background-color: white;
+        transition: 0.8s linear;
+    }
+    section>div {
+        max-width: 100vh;
+    }
+    .content-timeline {
+        width: 600px;
+    }
+    .container-timeline:before {
+        height: 900px;
+    }
+    .photo {
+        height: 450px;
+        width: 700px;
+    }
+}
+
+@media(min-width: 600px) {
+    .imgsobre {
+        display: grid;
+        grid-gap: 10px;
+        margin: 0 auto;
+        max-width: 500px;
+        padding: 25px;
+    }
+}
+
+@media(min-width: 1000px) {
+    .imgsobre {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 25px;
+    }
+    .imgsobre img {
+        margin-top: -50px;
+    }
+}
+
+@media screen and (min-width:414px) {
+    .text {
+        font-size: medium;
+    }
+}
+
+@media screen and (min-width:550px) {
+    .accordion-item {
+        width: auto;
+    }
+    .person {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: wrap;
+    }
+    .po {
+        margin: 20px;
+    }
+}
+
+@media(min-width: 1000px) {
+    .fundo2 {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .title1 {
+        padding: 10px;
+        margin-top: 70px;
+        font-size: 2.5rem;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .banner p {
+        font-size: 1rem;
+    }
+    .banner a {
+        margin-top: 70px;
+        font-size: 1rem;
+    }
+    .content-timeline {
+        width: 600px;
+    }
+    .person {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+}
+
+
+/* aqui foi quando desistimmos do mobile firts, desculpe Felipe */
+
+
+/* footer */
+
+@media(max-width:610px) {
+    .text-footer {
+        font-size: 14px;
+    }
+    .list-footer li a {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .social-media i {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:470px) {
+    .text-footer {
+        font-size: 12px;
+    }
+    .list-footer li a {
+        padding: 5px;
+    }
+}
+
+@media(max-width:330px) {
+    .text-footer {
+        font-size: 10px;
+    }
+}
+
+
+/* fim footer */
